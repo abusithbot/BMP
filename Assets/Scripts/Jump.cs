@@ -5,7 +5,7 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private float jump;
+    public float jump;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +18,7 @@ public class Jump : MonoBehaviour
         if(Input.GetButtonDown("Jump"))
           {
             rb.AddForce(Vector2.up * jump);
+            Debug.Log("Jump");
           }
     }
 }
