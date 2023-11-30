@@ -19,7 +19,5 @@ public class AnimatorController : MonoBehaviour
     {
         animator.SetFloat("Speed", rb2d.velocity.magnitude); //peut importe la direction la vitesse change, sans vitesse la vitesse est a 0
                                                              // animator.SetFloat("Speed",playerController.transform.position.y);
-
-        animator.SetFloat("Yspeed", rb2d.velocity.y); //saut
     }
 }
